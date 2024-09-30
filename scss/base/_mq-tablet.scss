@@ -1,0 +1,26 @@
+@media screen and (min-width:600px) {
+    header{
+     justify-content: space-between;
+    }
+    body{
+     background-size: contain;
+     background-position: center;
+    }
+    main .imghome1{
+     flex-direction: column;
+     width: 80%;
+     height: 80%;
+    }
+ 
+    main .video{
+     width: 100%;
+     height: 100%;}
+ 
+     .titulo{
+         font-size: 2rem;
+     }
+ 
+     .descripcion-txt{
+         font-size: 1.5rem;
+     }
+    }
