@@ -1,4 +1,4 @@
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 992px) {
   header {
     justify-content: space-between;
   }
@@ -9,12 +9,23 @@
   }
 
   main {
-    .imghome1 {
-      justify-content: center;
-      flex-direction: column-reverse;
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 100%;
+      img {
+        padding: 2rem 1.5rem;
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    .imgp {
       padding: 2rem 1.5rem;
-      width: 20%;
-      height: 20%;
+      width: 40%;
+      height: 40%;
     }
 
     .video {
