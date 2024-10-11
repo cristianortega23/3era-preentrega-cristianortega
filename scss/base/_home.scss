@@ -5,155 +5,145 @@
 
 @import "../utilidades/mixin.scss";
 
-
 // estilos nesting
 
-header{
-    @include flex;
+header {
+  @include flex;
 
-    nav{
-        ul{
-            li{
-                background-color: $color-nav;
-                color: $color-letrasm;
-                font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-                display: flex;
-                gap: 1rem;
-                margin: 1rem;
-                padding: 1rem;
-            }
-        }
+  nav {
+    ul {
+      li {
+        background-color: $color-nav;
+        color: $color-letrasm;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        display: flex;
+        gap: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+      }
     }
   }
+}
 
+.color-menu {
+  background-color: $color-menu;
+  color: $color-botonm;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 
-  .color-menu {
-    background-color: $color-menu;
-    color: $color-botonm;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.titulo {
+  background-color: $color-form2;
+  color: $color-titulo;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+header {
+  img {
+    max-width: 19%;
+    margin: 0.3rem;
+    padding: 0.3rem;
   }
+}
 
-  .titulo {
-    background-color: $color-form2;
-    color: $color-titulo;
-    text-align: center;
-    font-size: 25px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin: 10px;
-    padding: 10px;
-  }
-
-
-  header{
-    img{
-        max-width: 19%;
-        margin: 0.3rem;
-        padding: 0.3rem;
+main {
+  @include flex;
+  flex-direction: column;
+  margin: 1.5rem 1.5rem;
+  row-gap: 2rem;
+  div {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
     }
   }
+}
+main .imghome1 {
+  display: flex;
+  row-gap: 1.2rem;
+  align-content: center;
+  margin: 20px 20px;
+}
+.contenedorp {
+  @include flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0.5rem 0.5rem;
+  row-gap: 1.5rem;
+}
+.descripcion-txt {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: $color-form2;
+  color: $color-letrasp;
+  font-size: 1rem;
+}
 
-  main{
-    @include flex;
-    flex-direction: column;
-    margin: 1.5rem 1.5rem;
-    row-gap: 2rem;
-    div{
-        img{
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-    }
-  }
-  main .imghome1 {
-    display: flex;
-    row-gap: 1.2rem;
-    align-content: center;
-    margin: 20px 20px;
-  }
-  .contenedorp {
-    @include flex;
-    flex-direction: column;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0.5rem 0.5rem;
-    row-gap: 1.5rem;
-  }
-  .descripcion-txt {
-    text-align: center;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    background-color: $color-form2;
-    color: $color-letrasp;
-    font-size: 1rem;
-  }
-  
-  .video {
-    height: 0px;
-    padding-bottom: 56.25%;
-    position: relative;
-  }
-  
-  .video iframe {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .testimonios {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 65%;
-    height: 65%;
-    margin: 0.5rem 0.5rem;
-    row-gap: 1.5rem;
-  }
-  footer {
-    display: block;
-    text-align: center;
-    color: $color-letrasF;
-    background-color: $color-backF;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  }
-  
-  
-  
-  .denuncias1 {
-    color: $color-form1;
-    background-color: $color-form2;
-    text-align: center;
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    @include flex;
-    margin: 0.5rem 0.5rem;
-    row-gap: 1.5rem;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .fixed {
-    position: fixed;
-    text-align: right;
-    bottom: 5px;
-    right: 5px;
-  }
-  
-  .imgfixed {
-    width: 10%;
-  }
-  
- 
-  input {
-    color: $color-botond;
-    background-color: $color-denuncias;
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    margin: 0.5rem 0.5rem;
-    row-gap: 1rem;
-  }
-  
- 
+.video {
+  height: 0px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
 
+.video iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 
+.testimonios {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 65%;
+  height: 65%;
+  margin: 0.5rem 0.5rem;
+  row-gap: 1.5rem;
+}
+footer {
+  display: block;
+  text-align: center;
+  color: $color-letrasF;
+  background-color: $color-backF;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 
+.denuncias1 {
+  color: $color-form1;
+  background-color: $color-form2;
+  text-align: center;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  @include flex;
+  margin: 0.5rem 0.5rem;
+  row-gap: 1.5rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fixed {
+  position: fixed;
+  text-align: right;
+  bottom: 5px;
+  right: 5px;
+}
+
+.imgfixed {
+  width: 10%;
+}
+
+input {
+  color: $color-botond;
+  background-color: $color-denuncias;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0.5rem 0.5rem;
+  row-gap: 1rem;
+}
