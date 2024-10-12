@@ -3,12 +3,12 @@
     justify-content: space-between;
   }
   body {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
   }
   main .imghome1 {
     flex-direction: column;
-    width: 80%;
+    width: 500;
     height: 80%;
   }
 

@@ -1,6 +1,6 @@
 @media screen and (min-width: 992px) {
   header {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   body {
@@ -10,22 +10,9 @@
 
   main {
     .img-container {
-      display: flex;
-      align-items: center;
       justify-content: space-around;
       flex-direction: row;
-      width: 100%;
-      img {
-        padding: 2rem 1.5rem;
-        width: 50%;
-        height: 50%;
-      }
-    }
-
-    .imgp {
-      padding: 2rem 1.5rem;
-      width: 40%;
-      height: 40%;
+      flex-wrap: wrap;
     }
 
     .video {
@@ -38,6 +25,9 @@
     }
     .descripcion-txt {
       font-size: 1.5rem;
+    }
+    .imgfixed {
+      width: 8%;
     }
   }
 }
