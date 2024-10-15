@@ -1,0 +1,1 @@
+Esta es la presentacion de mi proyecto final para mi curso de CoderHouse para ser Desarrollador WEB. El proyecto se basa en el contexto actual y de hace años de lo que viven los venezolanos dentro de su pais bajo dictadura. es una pagina informativa y donde pueden hacer denuncias.
